@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes</title>
+</head>
+<body>
+    <ul>
+        {% for x in quotes.values() %}
+            <h1>{{x['text']}}</h1>
+            <h1>{{x['said_by']}}</h1>
+        {% endfor %}
+    </ul>
+    <br></br>
+    <a href="/home">Click here to go back to the home page and write another quote</a>
+
+</body>
+</html>
